@@ -1,0 +1,13 @@
+#JSON Property command
+filename : q1.json
+{
+    "property1": "value1",
+    "property2": "value2"
+}
+
+cat q1.json|jpath $property.1
+
+
+#output :- [
+  "value1"
+]
